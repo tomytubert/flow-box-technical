@@ -1,41 +1,69 @@
 import './App.css'
-import { CardPost } from './componentes/card/Card'
-import { Container, Grid } from '@mui/material'
+import {
+	AppBar,
+	Box,
+	Container,
+	FormControl,
+	InputLabel,
+	MenuItem,
+	Select,
+	SelectChangeEvent,
+	Typography,
+} from '@mui/material'
 import { usePosts } from './store/postContext'
+import { CardGrid } from './componentes/card-grid/CardGrid'
+import { useState } from 'react'
+
+const views = {
+	carousel: 'CAROUSEL',
+	card: 'CARD',
+	grid: 'GRID',
+	list: 'LIST',
+}
 
 function App() {
- const { data, loading, error } = usePosts()
+	const { data, loading, error } = usePosts()
+	const [selectedView, setSelectedView] = useState(views.card)
 
 	if (loading) return <p>Loading...</p>
 	if (error || !data) return <p>Error</p>
-  
+
+	const handleChange = (e: SelectChangeEvent) => {
+		setSelectedView(e.target.value)
+	}
+
 	return (
 		<>
-			<Container maxWidth='md' sx={{marginTop:"2rem"}}>
-				<Grid container spacing={2} rowGap={2}>
-					{data.results.map((post) => {
-						return (
-							<Grid
-								item
-								key={post.id}
-								xs={12}
-								sm={6}
-								md={4}
-								display='flex'
-								alignItems='center'
-								justifyContent='center'
-							>
-								<CardPost
-									image={post.urls.full}
-                  altImage={post.alt_description}
-									avatarImage={post.user.profile_image.small}
-                  avatarName={post.user.instagram_username}
-                  likes={post.likes}
-								/>
-							</Grid>
-						)
-					})}
-				</Grid>
+			<AppBar position='static' sx={{ p: 2, backgroundColor: 'primary.light' }}>
+				<Box
+					display='flex'
+					justifyContent='space-between'
+					alignItems='center'
+					gap={4}
+				>
+					<Typography variant='h6'>Your audience content</Typography>
+					<FormControl size='small' sx={{ minWidth: 120 }}>
+						<InputLabel id='demo-simple-select-label'>View</InputLabel>
+						<Select
+							labelId='demo-simple-select-label'
+							id='demo-simple-select'
+							value={selectedView}
+							label='View'
+							onChange={handleChange}
+						>
+							<MenuItem value={views.carousel}>Carousel</MenuItem>
+							<MenuItem value={views.card}>Card</MenuItem>
+							<MenuItem value={views.grid}>Grid</MenuItem>
+							<MenuItem value={views.list}>List</MenuItem>
+						</Select>
+					</FormControl>
+				</Box>
+			</AppBar>
+			<Container maxWidth='md' sx={{ marginTop: '2rem' }}>
+				{selectedView === views.carousel && <p>Carrousel</p>}
+				{selectedView === views.card && <CardGrid posts={data.results} />}
+				{selectedView === views.grid && <p>Grid</p>}
+				{selectedView === views.list && <p>List</p>}
 			</Container>
 		</>
 	)

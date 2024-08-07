@@ -1,8 +1,8 @@
-import { AppBar, Box, Typography } from '@mui/material'
+import { AppBar, Box } from '@mui/material'
 
 export const TopBar = () => {
 	return (
-		<AppBar position='static' sx={{ p: 2 }}>
+		<AppBar position='sticky' sx={{ p: 2 }}>
 			<Box display='flex' alignItems='center' gap={4}>
 				<svg width='100' height='21' fill='none'>
 					<path
@@ -14,7 +14,6 @@ export const TopBar = () => {
 						fill='#0B1F31'
 					/>
 				</svg>
-				<Typography variant='h6'>Your audience content</Typography>
 			</Box>
 		</AppBar>
 	)
