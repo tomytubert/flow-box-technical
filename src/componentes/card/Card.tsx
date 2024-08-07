@@ -29,7 +29,7 @@ export const CardPost = ({
 				avatar={<Avatar aria-label='recipe' src={avatarImage} />}
 				title={`@${avatarName}`}
 			/>
-			<CardMedia component='img' height='194' image={image} alt={altImage} />
+			<CardMedia component='img' height='194' image={image} alt={altImage} loading='lazy'/>
 			<CardContent sx={{ height: '120px' }}>
                 <Box display="flex" alignItems="center" gap={2} mb={1}>
 					<FavoriteIcon />

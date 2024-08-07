@@ -14,6 +14,7 @@ import { usePosts } from './store/postContext'
 import { CardGrid } from './componentes/card-grid/CardGrid'
 import { useState } from 'react'
 import { Carousel } from './componentes/carousel/Carousel'
+import { ImageGrid } from './componentes/grid/ImageGrid'
 
 const views = {
 	carousel: 'CAROUSEL',
@@ -24,7 +25,7 @@ const views = {
 
 function App() {
 	const { data, loading, error } = usePosts()
-	const [selectedView, setSelectedView] = useState(views.carousel)
+	const [selectedView, setSelectedView] = useState(views.grid)
 
 	if (loading) return <p>Loading...</p>
 	if (error || !data) return <p>Error</p>
@@ -60,10 +61,13 @@ function App() {
 					</FormControl>
 				</Box>
 			</AppBar>
-			<Container maxWidth='md' sx={{ marginTop: '2rem' }}>
-				{selectedView === views.carousel && <Carousel posts={data.results}/>}
+			<Container
+				maxWidth='md'
+				sx={{ marginTop: '2rem', display: 'flex', placeContent: 'center' }}
+			>
+				{selectedView === views.carousel && <Carousel posts={data.results} />}
 				{selectedView === views.card && <CardGrid posts={data.results} />}
-				{selectedView === views.grid && <p>Grid</p>}
+				{selectedView === views.grid && <ImageGrid posts={data.results} />}
 				{selectedView === views.list && <p>List</p>}
 			</Container>
 		</>
