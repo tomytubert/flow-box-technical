@@ -1,11 +1,11 @@
 
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Pagination } from 'swiper/modules'
+import { Images } from '../../interfaces/types'
 
 import 'swiper/css'
 import 'swiper/css/pagination'
 import './carousel.css'
-import { Images } from '../../interfaces/types'
 
 interface Props {
 	posts: Images[]

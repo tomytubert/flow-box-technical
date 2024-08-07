@@ -15,6 +15,7 @@ import { CardGrid } from './componentes/card-grid/CardGrid'
 import { useState } from 'react'
 import { Carousel } from './componentes/carousel/Carousel'
 import { ImageGrid } from './componentes/grid/ImageGrid'
+import { ImageList } from './componentes/list/ImageList'
 
 const views = {
 	carousel: 'CAROUSEL',
@@ -25,7 +26,7 @@ const views = {
 
 function App() {
 	const { data, loading, error } = usePosts()
-	const [selectedView, setSelectedView] = useState(views.grid)
+	const [selectedView, setSelectedView] = useState(views.list)
 
 	if (loading) return <p>Loading...</p>
 	if (error || !data) return <p>Error</p>
@@ -68,7 +69,7 @@ function App() {
 				{selectedView === views.carousel && <Carousel posts={data.results} />}
 				{selectedView === views.card && <CardGrid posts={data.results} />}
 				{selectedView === views.grid && <ImageGrid posts={data.results} />}
-				{selectedView === views.list && <p>List</p>}
+				{selectedView === views.list && <ImageList posts={data.results}/>}
 			</Container>
 		</>
 	)
