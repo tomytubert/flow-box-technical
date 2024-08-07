@@ -2,6 +2,8 @@ import './App.css'
 import {
 	AppBar,
 	Box,
+	Button,
+	CircularProgress,
 	Container,
 	FormControl,
 	InputLabel,
@@ -28,8 +30,45 @@ function App() {
 	const { data, loading, error } = usePosts()
 	const [selectedView, setSelectedView] = useState(views.list)
 
-	if (loading) return <p>Loading...</p>
-	if (error || !data) return <p>Error</p>
+	if (loading)
+		return (
+			<Container
+				sx={{
+					minHeight: '90dvh',
+					justifyContent: 'center',
+					alignItems: 'center',
+					display: 'flex',
+				}}
+			>
+				<CircularProgress color='primary' />
+			</Container>
+		)
+
+	if (error || !data)
+		return (
+			<Container
+				sx={{
+					minHeight: '90dvh',
+					justifyContent: 'center',
+					alignItems: 'center',
+					display: 'flex',
+				}}
+			>
+				<Box>
+					<Typography variant='h6'>
+						No data available, please try again
+					</Typography>
+					<Button
+						size='medium'
+						variant='contained'
+						sx={{ mt: 2 }}
+						onClick={() => window.location.reload()}
+					>
+						Try again
+					</Button>
+				</Box>
+			</Container>
+		)
 
 	const handleChange = (e: SelectChangeEvent) => {
 		setSelectedView(e.target.value)
@@ -42,17 +81,23 @@ function App() {
 					display='flex'
 					justifyContent='space-between'
 					alignItems='center'
-					gap={4}
+					gap={2}
 				>
 					<Typography variant='h6'>Your audience content</Typography>
 					<FormControl size='small' sx={{ minWidth: 120 }}>
-						<InputLabel id='demo-simple-select-label'>View</InputLabel>
+						<InputLabel
+							id='demo-simple-select-label'
+							sx={{ color: 'common.white' }}
+						>
+							View
+						</InputLabel>
 						<Select
 							labelId='demo-simple-select-label'
 							id='demo-simple-select'
 							value={selectedView}
 							label='View'
 							onChange={handleChange}
+							sx={{ borderRadius: '16px', color: 'common.white' }}
 						>
 							<MenuItem value={views.carousel}>Carousel</MenuItem>
 							<MenuItem value={views.card}>Card</MenuItem>
@@ -69,7 +114,7 @@ function App() {
 				{selectedView === views.carousel && <Carousel posts={data.results} />}
 				{selectedView === views.card && <CardGrid posts={data.results} />}
 				{selectedView === views.grid && <ImageGrid posts={data.results} />}
-				{selectedView === views.list && <ImageList posts={data.results}/>}
+				{selectedView === views.list && <ImageList posts={data.results} />}
 			</Container>
 		</>
 	)

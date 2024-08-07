@@ -32,12 +32,12 @@ export const CardPost = ({
 			<CardMedia component='img' height='194' image={image} alt={altImage} loading='lazy'/>
 			<CardContent sx={{ height: '120px' }}>
                 <Box display="flex" alignItems="center" gap={2} mb={1}>
-					<FavoriteIcon />
-                    <Typography variant='body2' color='text.secondary'>
+					<FavoriteIcon color='primary'/>
+                    <Typography variant='body2' color='text.secondary' >
                         {likes}
                     </Typography>
                 </Box>
-				<Typography variant='body2' color='text.secondary'>
+				<Typography variant='body2' color='text.secondary' className="capitalize-first-letter">
 					{altImage}
 				</Typography>
 			</CardContent>

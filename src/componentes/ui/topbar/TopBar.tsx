@@ -2,7 +2,7 @@ import { AppBar, Box } from '@mui/material'
 
 export const TopBar = () => {
 	return (
-		<AppBar position='sticky' sx={{ p: 2 }}>
+		<AppBar position='sticky' sx={{ p: 2, backgroundColor: 'common.white' }}>
 			<Box display='flex' alignItems='center' gap={4}>
 				<svg width='100' height='21' fill='none'>
 					<path

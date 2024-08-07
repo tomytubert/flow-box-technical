@@ -28,4 +28,9 @@
 	position: absolute;
 	left: 50%;
 	top: 50%;
+	border-radius:4px;
+}
+
+.swiper-pagination-bullet-active {
+	background-color: #7f3df3;
 }

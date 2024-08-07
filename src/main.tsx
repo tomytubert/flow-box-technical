@@ -11,6 +11,14 @@ const theme = createTheme({
 	typography: {
 		fontFamily: ['Inter'].join(','),
 	},
+	palette: {
+		primary: {
+			main: '#7F3DF3',
+			light: '#9863F5',
+			dark: '#582AAA',
+			contrastText: '#fff',
+		},
+	},
 	components: {
 		MuiCssBaseline: {
 			styleOverrides: `
@@ -24,6 +32,45 @@ const theme = createTheme({
         }
       `,
 		},
+		MuiOutlinedInput: {
+			styleOverrides: {
+				root: {
+					'& .MuiOutlinedInput-notchedOutline': {
+						borderColor: '#fff',
+					},
+					'&.Mui-focused .MuiOutlinedInput-notchedOutline': {
+						borderColor: '#582AAA',
+					},
+					'&:hover .MuiOutlinedInput-notchedOutline': {
+						borderColor: '#582AAA',
+					},
+				},
+			},
+		},
+		MuiSelect: {
+			styleOverrides: {
+				icon: {
+					color: '#582AAA', // Change this to your desired color
+				},
+			},
+		},
+		MuiSvgIcon: {
+			styleOverrides: {
+				root: {
+					'&.MuiSelect-icon': {
+						color: '#fff', // Change this to your desired color
+					},
+				},
+			},
+		},
+		MuiCard: {
+            styleOverrides: {
+                root: {
+                    borderRadius: '16px', // Custom border radius
+                    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', // Custom box shadow
+                },
+            },
+        },
 	},
 })
 
