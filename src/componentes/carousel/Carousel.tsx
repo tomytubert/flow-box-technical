@@ -1,4 +1,3 @@
-
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Pagination } from 'swiper/modules'
 import { Images } from '../../interfaces/types'
@@ -9,9 +8,10 @@ import './carousel.css'
 
 interface Props {
 	posts: Images[]
+	className?: string
 }
 
-export const Carousel = ({ posts }: Props) => {
+export const Carousel = ({ posts, className }: Props) => {
 	return (
 		<Swiper
 			slidesPerView={1}
@@ -30,7 +30,7 @@ export const Carousel = ({ posts }: Props) => {
 				},
 			}}
 			modules={[Pagination]}
-			className='mySwiper'
+			className={`mySwiper ${className}`}
 		>
 			{posts.map((post) => {
 				return (

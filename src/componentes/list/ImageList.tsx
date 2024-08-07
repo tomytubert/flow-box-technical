@@ -4,6 +4,7 @@ import FavoriteIcon from '@mui/icons-material/Favorite'
 
 interface Props {
 	posts: Images[]
+	className?: string
 }
 
 interface CardProps {
@@ -12,9 +13,9 @@ interface CardProps {
 	likes: number
 }
 
-export const ImageList = ({ posts }: Props) => {
+export const ImageList = ({ posts, className }: Props) => {
 	return (
-		<Box gap={2} display='flex' flexDirection='column'>
+		<Box gap={2} display='flex' flexDirection='column' className={className}>
 			{posts.map((post) => {
 				return (
 					<CardList
@@ -39,16 +40,20 @@ const CardList = ({ image, altImage, likes }: CardProps) => {
 				image={image}
 				alt={altImage}
 				loading='lazy'
-				sx={{flex: {md: 2}, width: '200px', minWidth:'200px',  }}
+				sx={{ flex: { md: 2 }, width: '200px', minWidth: '200px' }}
 			/>
-			<CardContent sx={{ height: {md: '120px'}, flex: {md: 2} }}>
+			<CardContent sx={{ height: { md: '120px' }, flex: { md: 2 } }}>
 				<Box display='flex' alignItems='center' gap={2} mb={1}>
-					<FavoriteIcon color='primary'/>
+					<FavoriteIcon color='primary' />
 					<Typography variant='body2' color='text.secondary'>
 						{likes}
 					</Typography>
 				</Box>
-				<Typography variant='body2' color='text.secondary' className="capitalize-first-letter">
+				<Typography
+					variant='body2'
+					color='text.secondary'
+					className='capitalize-first-letter'
+				>
 					{altImage}
 				</Typography>
 			</CardContent>

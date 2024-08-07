@@ -4,9 +4,10 @@ import { CardPost } from '../card/Card'
 
 interface Props {
 	posts: Images[]
+	className?: string
 }
 
-export const CardGrid = ({ posts }: Props) => {
+export const CardGrid = ({ posts,className }: Props) => {
 	return (
 		<Grid container spacing={2} rowGap={2}>
 			{posts.map((post) => {
@@ -20,6 +21,7 @@ export const CardGrid = ({ posts }: Props) => {
 						display='flex'
 						alignItems='center'
 						justifyContent='center'
+						className={className}
 					>
 						<CardPost
 							image={post.urls.full}

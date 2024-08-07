@@ -3,14 +3,16 @@ import { Images } from '../../interfaces/types'
 
 interface Props {
 	posts: Images[]
+	className?: string
 }
 
-export const ImageGrid = ({ posts }: Props) => {
+export const ImageGrid = ({ posts, className }: Props) => {
 	return (
 		<ImageList
 			sx={{ width: 500 }}
 			cols={3}
 			rowHeight={164}
+			className={className}
 		>
 			{posts.map((item) => (
 				<ImageListItem key={item.id}>

@@ -111,10 +111,10 @@ function App() {
 				maxWidth='md'
 				sx={{ marginTop: '2rem', display: 'flex', placeContent: 'center' }}
 			>
-				{selectedView === views.carousel && <Carousel posts={data.results} />}
-				{selectedView === views.card && <CardGrid posts={data.results} />}
-				{selectedView === views.grid && <ImageGrid posts={data.results} />}
-				{selectedView === views.list && <ImageList posts={data.results} />}
+				{selectedView === views.carousel && <Carousel className="fade-in" posts={data.results} />}
+				{selectedView === views.card && <CardGrid  className="fade-in" posts={data.results} />}
+				{selectedView === views.grid && <ImageGrid className="fade-in" posts={data.results} />}
+				{selectedView === views.list && <ImageList className="fade-in" posts={data.results} />}
 			</Container>
 		</>
 	)
