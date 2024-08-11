@@ -4,7 +4,7 @@ import { Response } from '../interfaces/types'
 export default function useFetch(url: string) {
 	const [data, setData] = useState<Response | null>(null)
 	const [error, setError] = useState<any>(null)
-	const [loading, setLoading] = useState<boolean>(false)
+	const [loading, setLoading] = useState<boolean>(true)
 
 	useEffect(() => {
 		;(async () => {
