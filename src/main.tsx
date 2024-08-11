@@ -4,7 +4,7 @@ import App from './App.tsx'
 import './index.css'
 import { CssBaseline, ThemeProvider, createTheme } from '@mui/material'
 import Inter from './assets/fonts/Inter-VariableFont_opsz-wght.ttf'
-import { TopBar } from './componentes/ui/topbar/TopBar.tsx'
+import { TopBar } from './components/ui/topbar/TopBar.tsx'
 import { PostsContextProvider } from './store/postContext.tsx'
 
 const theme = createTheme({

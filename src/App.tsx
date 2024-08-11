@@ -13,11 +13,11 @@ import {
 	Typography,
 } from '@mui/material'
 import { usePosts } from './store/postContext'
-import { CardGrid } from './componentes/card-grid/CardGrid'
+import { CardGrid } from './components/card-grid/CardGrid'
 import { useState } from 'react'
-import { Carousel } from './componentes/carousel/Carousel'
-import { ImageGrid } from './componentes/grid/ImageGrid'
-import { ImageList } from './componentes/list/ImageList'
+import { Carousel } from './components/carousel/Carousel'
+import { ImageGrid } from './components/grid/ImageGrid'
+import { ImageList } from './components/list/ImageList'
 
 const views = {
 	carousel: 'CAROUSEL',
