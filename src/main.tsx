@@ -1,11 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.tsx'
+import App from './App'
 import './index.css'
 import { CssBaseline, ThemeProvider, createTheme } from '@mui/material'
 import Inter from './assets/fonts/Inter-VariableFont_opsz-wght.ttf'
-import { TopBar } from './components/ui/topbar/TopBar.tsx'
-import { PostsContextProvider } from './store/postContext.tsx'
+import { TopBar } from './components/ui/topbar/TopBar'
+import { PostsContextProvider } from './store/postContext'
 
 const theme = createTheme({
 	typography: {
