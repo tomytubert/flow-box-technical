@@ -1,10 +1,11 @@
 import React from 'react'
 import { render, screen } from '@testing-library/react'
-import { CardGrid } from '../../../src/components/card-grid/CardGrid'
 import { AssetType, Color, Description, Images, Type } from '../../../src/interfaces/types'
+import { ImageList } from '../../../src/components/list/ImageList';
 
-describe('Testing <CardGrid />', () => {
-	const posts: Images[] = [
+
+describe('Testing <ImageList />', () => { 
+    const posts: Images[] = [
 		{
 			id: '1',
 			slug: 'two-brown-short-coated-dogs-laying-on-bed-RApQxN_Js5Y',
@@ -1867,14 +1868,9 @@ describe('Testing <CardGrid />', () => {
 		},
 	]
 
-	test('should match the snapshot', () => {
-		const { container } = render(<CardGrid posts={posts} />)
-		expect(container).toMatchSnapshot()
-	})
-
 	test('should render the correct number of posts', () => {
-		render(<CardGrid posts={posts} />)
-		const items = screen.getAllByLabelText('recipe')
-		expect(items.length).toBe(posts.length)
+		render(<ImageList posts={posts} />)
+        const images = screen.getAllByRole('img')
+		expect(images.length).toBe(posts.length)
 	})
-})
+ })

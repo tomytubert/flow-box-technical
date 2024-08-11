@@ -31,7 +31,7 @@ export const ImageList = ({ posts, className }: Props) => {
 	)
 }
 
-const CardList = ({ image, altImage, likes }: CardProps) => {
+export const CardList = ({ image, altImage, likes }: CardProps) => {
 	return (
 		<Card sx={{ display: 'flex' }}>
 			<CardMedia

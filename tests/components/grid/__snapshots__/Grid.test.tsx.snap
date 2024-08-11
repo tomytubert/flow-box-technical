@@ -1,0 +1,141 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing <Grid /> should match the snapshot 1`] = `
+<div>
+  <ul
+    class="MuiImageList-root MuiImageList-standard css-1jyq6y5-MuiImageList-root"
+    style="grid-template-columns: repeat(3, 1fr); gap: 4px;"
+  >
+    <li
+      class="MuiImageListItem-root MuiImageListItem-standard css-ta95xa-MuiImageListItem-root"
+      style="height: 164px; grid-column-end: span 1; grid-row-end: span 1;"
+    >
+      <img
+        alt="two brown short-coated dogs laying on bed"
+        class="MuiImageListItem-img"
+        loading="lazy"
+        src="https://images.unsplash.com/photo-1550206574-42cfa61e2a9d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w2NDA4MTd8MHwxfHNlYXJjaHwxfHxkb2dzfGVufDB8fHx8MTcyMzM2NzY1N3ww&ixlib=rb-4.0.3&q=85?w=164&h=164&fit=crop&auto=format"
+        srcset="https://images.unsplash.com/photo-1550206574-42cfa61e2a9d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w2NDA4MTd8MHwxfHNlYXJjaHwxfHxkb2dzfGVufDB8fHx8MTcyMzM2NzY1N3ww&ixlib=rb-4.0.3&q=85?w=164&h=164&fit=crop&auto=format&dpr=2 2x"
+      />
+    </li>
+    <li
+      class="MuiImageListItem-root MuiImageListItem-standard css-ta95xa-MuiImageListItem-root"
+      style="height: 164px; grid-column-end: span 1; grid-row-end: span 1;"
+    >
+      <img
+        alt="two brown short-coated dogs laying on bed"
+        class="MuiImageListItem-img"
+        loading="lazy"
+        src="https://images.unsplash.com/photo-1550206574-42cfa61e2a9d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w2NDA4MTd8MHwxfHNlYXJjaHwxfHxkb2dzfGVufDB8fHx8MTcyMzM2NzY1N3ww&ixlib=rb-4.0.3&q=85?w=164&h=164&fit=crop&auto=format"
+        srcset="https://images.unsplash.com/photo-1550206574-42cfa61e2a9d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w2NDA4MTd8MHwxfHNlYXJjaHwxfHxkb2dzfGVufDB8fHx8MTcyMzM2NzY1N3ww&ixlib=rb-4.0.3&q=85?w=164&h=164&fit=crop&auto=format&dpr=2 2x"
+      />
+    </li>
+    <li
+      class="MuiImageListItem-root MuiImageListItem-standard css-ta95xa-MuiImageListItem-root"
+      style="height: 164px; grid-column-end: span 1; grid-row-end: span 1;"
+    >
+      <img
+        alt="two brown short-coated dogs laying on bed"
+        class="MuiImageListItem-img"
+        loading="lazy"
+        src="https://images.unsplash.com/photo-1550206574-42cfa61e2a9d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w2NDA4MTd8MHwxfHNlYXJjaHwxfHxkb2dzfGVufDB8fHx8MTcyMzM2NzY1N3ww&ixlib=rb-4.0.3&q=85?w=164&h=164&fit=crop&auto=format"
+        srcset="https://images.unsplash.com/photo-1550206574-42cfa61e2a9d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w2NDA4MTd8MHwxfHNlYXJjaHwxfHxkb2dzfGVufDB8fHx8MTcyMzM2NzY1N3ww&ixlib=rb-4.0.3&q=85?w=164&h=164&fit=crop&auto=format&dpr=2 2x"
+      />
+    </li>
+    <li
+      class="MuiImageListItem-root MuiImageListItem-standard css-ta95xa-MuiImageListItem-root"
+      style="height: 164px; grid-column-end: span 1; grid-row-end: span 1;"
+    >
+      <img
+        alt="two brown short-coated dogs laying on bed"
+        class="MuiImageListItem-img"
+        loading="lazy"
+        src="https://images.unsplash.com/photo-1550206574-42cfa61e2a9d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w2NDA4MTd8MHwxfHNlYXJjaHwxfHxkb2dzfGVufDB8fHx8MTcyMzM2NzY1N3ww&ixlib=rb-4.0.3&q=85?w=164&h=164&fit=crop&auto=format"
+        srcset="https://images.unsplash.com/photo-1550206574-42cfa61e2a9d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w2NDA4MTd8MHwxfHNlYXJjaHwxfHxkb2dzfGVufDB8fHx8MTcyMzM2NzY1N3ww&ixlib=rb-4.0.3&q=85?w=164&h=164&fit=crop&auto=format&dpr=2 2x"
+      />
+    </li>
+    <li
+      class="MuiImageListItem-root MuiImageListItem-standard css-ta95xa-MuiImageListItem-root"
+      style="height: 164px; grid-column-end: span 1; grid-row-end: span 1;"
+    >
+      <img
+        alt="two brown short-coated dogs laying on bed"
+        class="MuiImageListItem-img"
+        loading="lazy"
+        src="https://images.unsplash.com/photo-1550206574-42cfa61e2a9d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w2NDA4MTd8MHwxfHNlYXJjaHwxfHxkb2dzfGVufDB8fHx8MTcyMzM2NzY1N3ww&ixlib=rb-4.0.3&q=85?w=164&h=164&fit=crop&auto=format"
+        srcset="https://images.unsplash.com/photo-1550206574-42cfa61e2a9d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w2NDA4MTd8MHwxfHNlYXJjaHwxfHxkb2dzfGVufDB8fHx8MTcyMzM2NzY1N3ww&ixlib=rb-4.0.3&q=85?w=164&h=164&fit=crop&auto=format&dpr=2 2x"
+      />
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Testing <ImageGrid /> should match the snapshot 1`] = `
+<div>
+  <ul
+    class="MuiImageList-root MuiImageList-standard css-1jyq6y5-MuiImageList-root"
+    style="grid-template-columns: repeat(3, 1fr); gap: 4px;"
+  >
+    <li
+      class="MuiImageListItem-root MuiImageListItem-standard css-ta95xa-MuiImageListItem-root"
+      style="height: 164px; grid-column-end: span 1; grid-row-end: span 1;"
+    >
+      <img
+        alt="two brown short-coated dogs laying on bed"
+        class="MuiImageListItem-img"
+        loading="lazy"
+        src="https://images.unsplash.com/photo-1550206574-42cfa61e2a9d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w2NDA4MTd8MHwxfHNlYXJjaHwxfHxkb2dzfGVufDB8fHx8MTcyMzM2NzY1N3ww&ixlib=rb-4.0.3&q=85?w=164&h=164&fit=crop&auto=format"
+        srcset="https://images.unsplash.com/photo-1550206574-42cfa61e2a9d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w2NDA4MTd8MHwxfHNlYXJjaHwxfHxkb2dzfGVufDB8fHx8MTcyMzM2NzY1N3ww&ixlib=rb-4.0.3&q=85?w=164&h=164&fit=crop&auto=format&dpr=2 2x"
+      />
+    </li>
+    <li
+      class="MuiImageListItem-root MuiImageListItem-standard css-ta95xa-MuiImageListItem-root"
+      style="height: 164px; grid-column-end: span 1; grid-row-end: span 1;"
+    >
+      <img
+        alt="two brown short-coated dogs laying on bed"
+        class="MuiImageListItem-img"
+        loading="lazy"
+        src="https://images.unsplash.com/photo-1550206574-42cfa61e2a9d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w2NDA4MTd8MHwxfHNlYXJjaHwxfHxkb2dzfGVufDB8fHx8MTcyMzM2NzY1N3ww&ixlib=rb-4.0.3&q=85?w=164&h=164&fit=crop&auto=format"
+        srcset="https://images.unsplash.com/photo-1550206574-42cfa61e2a9d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w2NDA4MTd8MHwxfHNlYXJjaHwxfHxkb2dzfGVufDB8fHx8MTcyMzM2NzY1N3ww&ixlib=rb-4.0.3&q=85?w=164&h=164&fit=crop&auto=format&dpr=2 2x"
+      />
+    </li>
+    <li
+      class="MuiImageListItem-root MuiImageListItem-standard css-ta95xa-MuiImageListItem-root"
+      style="height: 164px; grid-column-end: span 1; grid-row-end: span 1;"
+    >
+      <img
+        alt="two brown short-coated dogs laying on bed"
+        class="MuiImageListItem-img"
+        loading="lazy"
+        src="https://images.unsplash.com/photo-1550206574-42cfa61e2a9d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w2NDA4MTd8MHwxfHNlYXJjaHwxfHxkb2dzfGVufDB8fHx8MTcyMzM2NzY1N3ww&ixlib=rb-4.0.3&q=85?w=164&h=164&fit=crop&auto=format"
+        srcset="https://images.unsplash.com/photo-1550206574-42cfa61e2a9d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w2NDA4MTd8MHwxfHNlYXJjaHwxfHxkb2dzfGVufDB8fHx8MTcyMzM2NzY1N3ww&ixlib=rb-4.0.3&q=85?w=164&h=164&fit=crop&auto=format&dpr=2 2x"
+      />
+    </li>
+    <li
+      class="MuiImageListItem-root MuiImageListItem-standard css-ta95xa-MuiImageListItem-root"
+      style="height: 164px; grid-column-end: span 1; grid-row-end: span 1;"
+    >
+      <img
+        alt="two brown short-coated dogs laying on bed"
+        class="MuiImageListItem-img"
+        loading="lazy"
+        src="https://images.unsplash.com/photo-1550206574-42cfa61e2a9d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w2NDA4MTd8MHwxfHNlYXJjaHwxfHxkb2dzfGVufDB8fHx8MTcyMzM2NzY1N3ww&ixlib=rb-4.0.3&q=85?w=164&h=164&fit=crop&auto=format"
+        srcset="https://images.unsplash.com/photo-1550206574-42cfa61e2a9d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w2NDA4MTd8MHwxfHNlYXJjaHwxfHxkb2dzfGVufDB8fHx8MTcyMzM2NzY1N3ww&ixlib=rb-4.0.3&q=85?w=164&h=164&fit=crop&auto=format&dpr=2 2x"
+      />
+    </li>
+    <li
+      class="MuiImageListItem-root MuiImageListItem-standard css-ta95xa-MuiImageListItem-root"
+      style="height: 164px; grid-column-end: span 1; grid-row-end: span 1;"
+    >
+      <img
+        alt="two brown short-coated dogs laying on bed"
+        class="MuiImageListItem-img"
+        loading="lazy"
+        src="https://images.unsplash.com/photo-1550206574-42cfa61e2a9d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w2NDA4MTd8MHwxfHNlYXJjaHwxfHxkb2dzfGVufDB8fHx8MTcyMzM2NzY1N3ww&ixlib=rb-4.0.3&q=85?w=164&h=164&fit=crop&auto=format"
+        srcset="https://images.unsplash.com/photo-1550206574-42cfa61e2a9d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w2NDA4MTd8MHwxfHNlYXJjaHwxfHxkb2dzfGVufDB8fHx8MTcyMzM2NzY1N3ww&ixlib=rb-4.0.3&q=85?w=164&h=164&fit=crop&auto=format&dpr=2 2x"
+      />
+    </li>
+  </ul>
+</div>
+`;
