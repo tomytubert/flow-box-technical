@@ -3,8 +3,6 @@ import useFetch from '../../src/hooks/useFetch'
 
 describe('Testing useFetch(', () => {
 	const url = `https://api.unsplash.com/search/photos?client_id=${process.env.UNSPLASH_ACCESS_KEY}&query=dogs&per_page=15&page=1`
-
-	console.log('url', url)
 	test('should return initial state', () => {
 		const { result } = renderHook(() => useFetch(url))
 		const { data, error, loading } = result.current
