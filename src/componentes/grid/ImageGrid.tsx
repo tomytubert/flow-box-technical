@@ -1,5 +1,6 @@
 import { ImageList, ImageListItem } from '@mui/material'
 import { Images } from '../../interfaces/types'
+import PropTypes from 'prop-types';
 
 interface Props {
 	posts: Images[]
@@ -26,4 +27,9 @@ export const ImageGrid = ({ posts, className }: Props) => {
 			))}
 		</ImageList>
 	)
+}
+
+ImageGrid.propTypes = {
+	posts: PropTypes.array.isRequired,
+	className: PropTypes.string,
 }

@@ -1,6 +1,7 @@
 import { Box, Card, CardContent, CardMedia, Typography } from '@mui/material'
 import { Images } from '../../interfaces/types'
 import FavoriteIcon from '@mui/icons-material/Favorite'
+import PropTypes from 'prop-types';
 
 interface Props {
 	posts: Images[]
@@ -59,4 +60,15 @@ const CardList = ({ image, altImage, likes }: CardProps) => {
 			</CardContent>
 		</Card>
 	)
+}
+
+ImageList.propTypes = {
+	posts: PropTypes.array.isRequired,
+	className: PropTypes.string,
+}
+
+CardList.propTypes = {
+	image: PropTypes.string.isRequired,
+	altImage: PropTypes.string.isRequired,
+	likes: PropTypes.number.isRequired,
 }
