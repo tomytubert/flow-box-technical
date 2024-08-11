@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing <Carousel /> should match the snapshot 1`] = `
+<div>
+  <img
+    alt="two brown short-coated dogs laying on bed"
+    loading="lazy"
+    src="https://images.unsplash.com/photo-1550206574-42cfa61e2a9d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w2NDA4MTd8MHwxfHNlYXJjaHwxfHxkb2dzfGVufDB8fHx8MTcyMzM2NzY1N3ww&ixlib=rb-4.0.3&q=85"
+  />
+  <div
+    class="swiper-lazy-preloader swiper-lazy-preloader-white"
+  />
+  <img
+    alt="two brown short-coated dogs laying on bed"
+    loading="lazy"
+    src="https://images.unsplash.com/photo-1550206574-42cfa61e2a9d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w2NDA4MTd8MHwxfHNlYXJjaHwxfHxkb2dzfGVufDB8fHx8MTcyMzM2NzY1N3ww&ixlib=rb-4.0.3&q=85"
+  />
+  <div
+    class="swiper-lazy-preloader swiper-lazy-preloader-white"
+  />
+  <img
+    alt="two brown short-coated dogs laying on bed"
+    loading="lazy"
+    src="https://images.unsplash.com/photo-1550206574-42cfa61e2a9d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w2NDA4MTd8MHwxfHNlYXJjaHwxfHxkb2dzfGVufDB8fHx8MTcyMzM2NzY1N3ww&ixlib=rb-4.0.3&q=85"
+  />
+  <div
+    class="swiper-lazy-preloader swiper-lazy-preloader-white"
+  />
+  <img
+    alt="two brown short-coated dogs laying on bed"
+    loading="lazy"
+    src="https://images.unsplash.com/photo-1550206574-42cfa61e2a9d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w2NDA4MTd8MHwxfHNlYXJjaHwxfHxkb2dzfGVufDB8fHx8MTcyMzM2NzY1N3ww&ixlib=rb-4.0.3&q=85"
+  />
+  <div
+    class="swiper-lazy-preloader swiper-lazy-preloader-white"
+  />
+  <img
+    alt="two brown short-coated dogs laying on bed"
+    loading="lazy"
+    src="https://images.unsplash.com/photo-1550206574-42cfa61e2a9d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w2NDA4MTd8MHwxfHNlYXJjaHwxfHxkb2dzfGVufDB8fHx8MTcyMzM2NzY1N3ww&ixlib=rb-4.0.3&q=85"
+  />
+  <div
+    class="swiper-lazy-preloader swiper-lazy-preloader-white"
+  />
+</div>
+`;

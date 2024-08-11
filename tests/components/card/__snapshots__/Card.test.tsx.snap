@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing <Card /> should match the snapshot 1`] = `
+<div>
+  <div
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1syf4pq-MuiPaper-root-MuiCard-root"
+  >
+    <div
+      class="MuiCardHeader-root css-185gdzj-MuiCardHeader-root"
+    >
+      <div
+        class="MuiCardHeader-avatar css-1ssile9-MuiCardHeader-avatar"
+      >
+        <div
+          aria-label="recipe"
+          class="MuiAvatar-root MuiAvatar-circular css-1wlk0hk-MuiAvatar-root"
+        >
+          <img
+            class="MuiAvatar-img css-1pqm26d-MuiAvatar-img"
+            src="https://example.com/avatar.jpg"
+          />
+        </div>
+      </div>
+      <div
+        class="MuiCardHeader-content css-1qbkelo-MuiCardHeader-content"
+      >
+        <span
+          class="MuiTypography-root MuiTypography-body2 MuiCardHeader-title css-et1ao3-MuiTypography-root"
+        >
+          @example
+        </span>
+      </div>
+    </div>
+    <img
+      alt="example"
+      class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-o69gx8-MuiCardMedia-root"
+      height="194"
+      loading="lazy"
+      src="https://example.com/image.jpg"
+    />
+    <div
+      class="MuiCardContent-root css-20rqxf-MuiCardContent-root"
+    >
+      <div
+        class="MuiBox-root css-syu8eu"
+      >
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeMedium css-ci5apu-MuiSvgIcon-root"
+          data-testid="FavoriteIcon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="m12 21.35-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54z"
+          />
+        </svg>
+        <p
+          class="MuiTypography-root MuiTypography-body2 css-r40f8v-MuiTypography-root"
+        >
+          100
+        </p>
+      </div>
+      <p
+        class="MuiTypography-root MuiTypography-body2 capitalize-first-letter css-r40f8v-MuiTypography-root"
+      >
+        example
+      </p>
+    </div>
+  </div>
+</div>
+`;
