@@ -26,7 +26,7 @@ const views = {
 	list: 'LIST',
 }
 
-function App() {
+export const App = () => {
 	const { data, loading, error } = usePosts()
 	const [selectedView, setSelectedView] = useState(views.list)
 
