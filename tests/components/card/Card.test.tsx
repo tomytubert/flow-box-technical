@@ -1,6 +1,7 @@
 import React from 'react'
 import { render, screen } from '@testing-library/react'
 import { CardPost } from '../../../src/components/card/Card'
+import '@testing-library/jest-dom'
 
 describe('Testing <Card />', () => {
 	const post = {
@@ -30,11 +31,11 @@ describe('Testing <Card />', () => {
 	test('should render the avatar name', () => {
 		render(<CardPost {...post} />)
 		const p = screen.getByText(post.avatarName)
-		expect(p).toBeTruthy()
+		expect(p).toBeVisible()
 	})
 	test('should render the likes', () => {
 		render(<CardPost {...post} />)
 		const p = screen.getByText(post.likes)
-		expect(p).toBeTruthy()
+		expect(p).toBeVisible()
 	})
 })

@@ -1,74 +1,28 @@
-import { Box, Card, CardContent, CardMedia, Typography } from '@mui/material'
+import { Box } from '@mui/material'
 import { Images } from '../../interfaces/types'
-import FavoriteIcon from '@mui/icons-material/Favorite'
-import PropTypes from 'prop-types';
+import { CardPost } from '../card/Card'
 
-interface Props {
+interface ImageListProps {
 	posts: Images[]
 	className?: string
 }
 
-interface CardProps {
-	image: string
-	altImage: string
-	likes: number
-}
-
-export const ImageList = ({ posts, className }: Props) => {
+export const ImageList = ({ posts, className }: ImageListProps) => {
 	return (
 		<Box gap={2} display='flex' flexDirection='column' className={className}>
 			{posts.map((post) => {
 				return (
-					<CardList
+					<CardPost
 						key={post.id}
 						image={post.urls.full}
 						altImage={post.alt_description}
+						avatarImage={post.user.profile_image.small}
+						avatarName={post.user.instagram_username}
 						likes={post.likes}
+						isRowDisplay
 					/>
 				)
 			})}
 		</Box>
 	)
-}
-
-export const CardList = ({ image, altImage, likes }: CardProps) => {
-	return (
-		<Card sx={{ display: 'flex' }}>
-			<CardMedia
-				component='img'
-				height='194'
-				width='200'
-				image={image}
-				alt={altImage}
-				loading='lazy'
-				sx={{ flex: { md: 2 }, width: '200px', minWidth: '200px' }}
-			/>
-			<CardContent sx={{ height: { md: '120px' }, flex: { md: 2 } }}>
-				<Box display='flex' alignItems='center' gap={2} mb={1}>
-					<FavoriteIcon color='primary' />
-					<Typography variant='body2' color='text.secondary'>
-						{likes}
-					</Typography>
-				</Box>
-				<Typography
-					variant='body2'
-					color='text.secondary'
-					className='capitalize-first-letter'
-				>
-					{altImage}
-				</Typography>
-			</CardContent>
-		</Card>
-	)
-}
-
-ImageList.propTypes = {
-	posts: PropTypes.array.isRequired,
-	className: PropTypes.string,
-}
-
-CardList.propTypes = {
-	image: PropTypes.string.isRequired,
-	altImage: PropTypes.string.isRequired,
-	likes: PropTypes.number.isRequired,
 }

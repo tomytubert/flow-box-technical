@@ -9,7 +9,7 @@ exports[`Testing <CardGrid /> should match the snapshot 1`] = `
       class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4 css-49dsdv-MuiGrid-root"
     >
       <div
-        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1syf4pq-MuiPaper-root-MuiCard-root"
+        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-eydnr8-MuiPaper-root-MuiCard-root"
       >
         <div
           class="MuiCardHeader-root css-185gdzj-MuiCardHeader-root"
@@ -79,7 +79,7 @@ exports[`Testing <CardGrid /> should match the snapshot 1`] = `
       class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4 css-49dsdv-MuiGrid-root"
     >
       <div
-        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1syf4pq-MuiPaper-root-MuiCard-root"
+        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-eydnr8-MuiPaper-root-MuiCard-root"
       >
         <div
           class="MuiCardHeader-root css-185gdzj-MuiCardHeader-root"
@@ -149,7 +149,7 @@ exports[`Testing <CardGrid /> should match the snapshot 1`] = `
       class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4 css-49dsdv-MuiGrid-root"
     >
       <div
-        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1syf4pq-MuiPaper-root-MuiCard-root"
+        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-eydnr8-MuiPaper-root-MuiCard-root"
       >
         <div
           class="MuiCardHeader-root css-185gdzj-MuiCardHeader-root"
@@ -219,7 +219,7 @@ exports[`Testing <CardGrid /> should match the snapshot 1`] = `
       class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4 css-49dsdv-MuiGrid-root"
     >
       <div
-        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1syf4pq-MuiPaper-root-MuiCard-root"
+        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-eydnr8-MuiPaper-root-MuiCard-root"
       >
         <div
           class="MuiCardHeader-root css-185gdzj-MuiCardHeader-root"
@@ -289,7 +289,7 @@ exports[`Testing <CardGrid /> should match the snapshot 1`] = `
       class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4 css-49dsdv-MuiGrid-root"
     >
       <div
-        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1syf4pq-MuiPaper-root-MuiCard-root"
+        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-eydnr8-MuiPaper-root-MuiCard-root"
       >
         <div
           class="MuiCardHeader-root css-185gdzj-MuiCardHeader-root"

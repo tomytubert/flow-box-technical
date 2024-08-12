@@ -1,14 +1,13 @@
 import { Grid } from '@mui/material'
 import { Images } from '../../interfaces/types'
 import { CardPost } from '../card/Card'
-import PropTypes from 'prop-types';
 
-interface Props {
+interface CardGridProps {
 	posts: Images[]
 	className?: string
 }
 
-export const CardGrid = ({ posts,className }: Props) => {
+export const CardGrid = ({ posts,className }: CardGridProps) => {
 	return (
 		<Grid container spacing={2} rowGap={2}>
 			{posts.map((post) => {
@@ -36,10 +35,4 @@ export const CardGrid = ({ posts,className }: Props) => {
 			})}
 		</Grid>
 	)
-}
-
-//PropTypes
-CardGrid.propTypes = {
-	posts: PropTypes.array.isRequired,
-	className: PropTypes.string,
 }

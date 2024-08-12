@@ -54,14 +54,19 @@ export const App = () => {
 					display: 'flex',
 				}}
 			>
-				<Box>
+				<Box
+					display='flex'
+					flexDirection='column'
+					justifyContent='center'
+					alignItems='center'
+				>
 					<Typography variant='h6'>
 						No data available, please try again
 					</Typography>
 					<Button
 						size='medium'
 						variant='contained'
-						sx={{ mt: 2 }}
+						sx={{ mt: 2, width: '50%' }}
 						onClick={() => window.location.reload()}
 					>
 						Try again
@@ -111,10 +116,18 @@ export const App = () => {
 				maxWidth='md'
 				sx={{ marginTop: '2rem', display: 'flex', placeContent: 'center' }}
 			>
-				{selectedView === views.carousel && <Carousel className="fade-in" posts={data.results} />}
-				{selectedView === views.card && <CardGrid  className="fade-in" posts={data.results} />}
-				{selectedView === views.grid && <ImageGrid className="fade-in" posts={data.results} />}
-				{selectedView === views.list && <ImageList className="fade-in" posts={data.results} />}
+				{selectedView === views.carousel && (
+					<Carousel className='fade-in' posts={data.results} />
+				)}
+				{selectedView === views.card && (
+					<CardGrid className='fade-in' posts={data.results} />
+				)}
+				{selectedView === views.grid && (
+					<ImageGrid className='fade-in' posts={data.results} />
+				)}
+				{selectedView === views.list && (
+					<ImageList className='fade-in' posts={data.results} />
+				)}
 			</Container>
 		</>
 	)

@@ -3,7 +3,7 @@
 exports[`Testing <Card /> should match the snapshot 1`] = `
 <div>
   <div
-    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1syf4pq-MuiPaper-root-MuiCard-root"
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-eydnr8-MuiPaper-root-MuiCard-root"
   >
     <div
       class="MuiCardHeader-root css-185gdzj-MuiCardHeader-root"

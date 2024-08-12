@@ -1,18 +1,17 @@
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Pagination } from 'swiper/modules'
 import { Images } from '../../interfaces/types'
-import PropTypes from 'prop-types';
 
 import 'swiper/css'
 import 'swiper/css/pagination'
 import './carousel.css'
 
-interface Props {
+interface CarouselProps {
 	posts: Images[]
 	className?: string
 }
 
-export const Carousel = ({ posts, className }: Props) => {
+export const Carousel = ({ posts, className }: CarouselProps) => {
 	return (
 		<Swiper
 			slidesPerView={1}
@@ -47,9 +46,4 @@ export const Carousel = ({ posts, className }: Props) => {
 			})}
 		</Swiper>
 	)
-}
-
-Carousel.propTypes = {
-	posts: PropTypes.array.isRequired,
-	className: PropTypes.string,
 }

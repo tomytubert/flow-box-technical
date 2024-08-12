@@ -1,13 +1,12 @@
 import { ImageList, ImageListItem } from '@mui/material'
 import { Images } from '../../interfaces/types'
-import PropTypes from 'prop-types';
 
-interface Props {
+interface ImageGridProps {
 	posts: Images[]
 	className?: string
 }
 
-export const ImageGrid = ({ posts, className }: Props) => {
+export const ImageGrid = ({ posts, className }: ImageGridProps) => {
 	return (
 		<ImageList
 			sx={{ width: 500 }}
@@ -27,9 +26,4 @@ export const ImageGrid = ({ posts, className }: Props) => {
 			))}
 		</ImageList>
 	)
-}
-
-ImageGrid.propTypes = {
-	posts: PropTypes.array.isRequired,
-	className: PropTypes.string,
 }

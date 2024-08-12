@@ -116,7 +116,7 @@ exports[`Testing <App /> should match the snapshot when there is an error 1`] = 
     class="MuiContainer-root MuiContainer-maxWidthLg css-6350ea-MuiContainer-root"
   >
     <div
-      class="MuiBox-root css-0"
+      class="MuiBox-root css-wkpw2c"
     >
       <h6
         class="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
@@ -124,7 +124,7 @@ exports[`Testing <App /> should match the snapshot when there is an error 1`] = 
         No data available, please try again
       </h6>
       <button
-        class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary css-lll1vm-MuiButtonBase-root-MuiButton-root"
+        class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary css-1apuqqe-MuiButtonBase-root-MuiButton-root"
         tabindex="0"
         type="button"
       >

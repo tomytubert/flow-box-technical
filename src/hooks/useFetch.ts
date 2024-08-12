@@ -7,7 +7,7 @@ export default function useFetch(url: string) {
 	const [loading, setLoading] = useState<boolean>(true)
 
 	useEffect(() => {
-		;(async () => {
+		(async () => {
 			try {
 				setLoading(true)
 				const response = await fetch(url)
