@@ -9,16 +9,16 @@ interface ImageGridProps {
 export const ImageGrid = ({ posts, className }: ImageGridProps) => {
 	return (
 		<ImageList
-			sx={{ width: 500 }}
+			sx={{ width: '100%' }}
 			cols={3}
-			rowHeight={164}
 			className={className}
+			variant="masonry"
 		>
 			{posts.map((item) => (
 				<ImageListItem key={item.id}>
 					<img
-						srcSet={`${item.urls.full}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
-						src={`${item.urls.full}?w=164&h=164&fit=crop&auto=format`}
+						srcSet={`${item.urls.full} 2x`}
+						src={`${item.urls.full}`}
 						alt={item.alt_description}
 						loading='lazy'
 					/>
